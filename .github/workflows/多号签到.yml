@@ -73,4 +73,4 @@ jobs:
         user2: ${{secrets.unicom_user2}}
         password2: ${{secrets.unicom_password2}}
         appid: ${{secrets.unicom_appid}}
-      run: node index.js unicom --accountSn=1,2 --user-1=13257454716 --password-1=322805 --appid-1=1f7af72ad6912d306b5053abf90c7ebbfba74f782ac4b15829236802fa7d2f3ede406ac49b9d98e3acfa0a3b09fa8fe2bc669f431fbcd8dc49680c3df7faae1d --user-2=13171879812 --password-2=322805 --appid-2=3f31e4f31439ef1c9288878871f9b2c29a04c99350fc3b71f9c57960ac704b19798cfab2b97f531bfeed65c906723bcc026a22552ea7bac00253bf4dd5cacd70
+      run: node index.js unicom --accountSn=1,2 --user-1=${user} --password-1=${password} --appid-1=${appid} --user-2=${user2} --password-2=${password2} --appid-2=${appid}
